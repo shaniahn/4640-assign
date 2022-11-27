@@ -21,11 +21,12 @@ Resources Created:
 - Run this command to SSH into the servers:
   * ```ssh-add```
   * ```ssh -A root@<ip address>```
+
 ![alt text](screenshots/ssh_web1.png) </br>
-SSH from Bastion to Web1
+* SSH from Bastion to Web1
 
 ![alt text](screenshots/ssh_web2.png) </br>
-SSH from Bastion to Web2
+* SSH from Bastion to Web2
 
 11) Create a file called ```database.tf``` to create a database cluster and firewall.
 ![alt text](screenshots/db-connection.png) </br>
