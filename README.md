@@ -18,13 +18,19 @@ Resources Created:
 8) Create a file called ```network.tf``` to declare your VPC resource
 9) Create a file called ```bastion.tf``` to create your Bastion server, make sure to include the ```vpc_uuid``` parameter to put this inside VPC
 10) Create a firewall around this server so that it can only be accessed via SSH
+- Run this command to SSH into the servers:
+  * ```ssh-add```
+  * ```ssh -A root@<ip address>```
 ![alt text](screenshots/ssh_web1.png) </br>
 SSH from Bastion to Web1
+
 ![alt text](screenshots/ssh_web2.png) </br>
 SSH from Bastion to Web2
+
 11) Create a file called ```database.tf``` to create a database cluster and firewall.
 ![alt text](screenshots/db-connection.png) </br>
 This screenshot was taken with no firewall, that's how I had access to test it
+
 12) Create a file called ```servers.tf``` to create the internal droplets, load balancer, and the firewall
 13) Create a file called ```output.tf``` to create the output that you'd like to see at the end of the build (e.g., IP addresses)
 
